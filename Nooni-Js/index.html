@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nooni-Furniture</title>
+    <link rel="icon" href="./img/axe.png">
+    <script src="https://cdn.jsdelivr.net/npm/magicmousejs@1.2.1/dist/magicmouse.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ////////Mini-Navbar//////// -->
+     <div class="mini_nav">
+        <p class="mini_nav_para">Up to 40% off Best-Selling Furniture. <span class="mini_nav_span magic-hover magic-hover__square">Shop Now</span></p>
+        <div class="mini_nav_lang">
+            <div class="mini_nav_lang_item magic-hover magic-hover__square">English <span  class="mini_nav_lang_item_span"><img src="./img/down-arrow.png" alt=""></span>
+            <div class="mini_nav_lang_item_items">
+                <ul>
+                    <li>English</li>
+                    <li>French</li>
+                </ul>
+            </div>
+            </div>
+            <div class="mini_nav_lang_item2 magic-hover magic-hover__square">USD <span class="mini_nav_lang_item_span"><img src="./img/down-arrow.png" alt=""></span>
+                <div class="mini_nav_lang_item_items2">
+                    <ul>
+                        <li>USD</li>
+                        <li>EUR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- ////////NavBar//////// -->
+
+    <div class="overlay magic-hover magic-hover__square"></div>
+<!-- //////////////////////////////Left Menu Bar/////////////////////// -->
+
+<div class="left_slide_bar">
+<ul class="menu">
+<p class="menu_close magic-hover magic-hover__square">X</p>
+<div class="show_in_small">nOoN'i</div>
+<li class="menu_item magic-hover magic-hover__square">Home <span><img src="./img/next.png" alt="" class="menu_item_span"></span></li>
+<li class="menu_item magic-hover magic-hover__square">Shop <span><img src="./img/next.png" alt="" class="menu_item_span"></span></li>
+<li class="menu_item magic-hover magic-hover__square">Product <span><img src="./img/next.png" alt="" class="menu_item_span"></span></li>
+<li class="menu_item magic-hover magic-hover__square">Blog <span><img src="./img/next.png" alt="" class="menu_item_span"></span></li>
+<li class="menu_item magic-hover magic-hover__square">About Us</li>
+<li class="menu_item magic-hover magic-hover__square">Contact Us</li>
+</ul>
+</div>
+
+<!-- //////////////////////////////Right Menu Bar/////////////////////// -->
+
+<div class="right_slide_bar">
+    <div class="menu">
+   <p class="search_close magic-hover magic-hover__square">Search for products (0) <span class="search_close">X</span></p>
+   <div class="search_inp"><input type="text" placeholder="Search For Products"><span><img src="./img/search-interface-symbol.png" alt="" class="nav_item"></span></div>
+    </div>
+    </div>
+
+<nav class="navbar">
+    <div class="navbar_item">
+        <div><img src="./img/hamburger.png" alt="" class="nav_item magic-hover magic-hover__square" id="menu_open"></div>
+        <div><img src="./img/search-interface-symbol.png " alt="" class="nav_item magic-hover magic-hover__square"  id="search_open"></div>
+    </div>
+
+    <div class="navbar_item2">
+        <p>nOoN'i</p>
+    </div>
+
+    
+      <div class="navbar_item3">
+        <div  id="main_profile"><img src="./img/user.png" alt="" class="nav_item magic-hover magic-hover__square" id="profile">
+        <!-- ////////////////////////Profile Card////////////////// -->
+
+        <div class="card">
+            <div class="profile_card">
+                <input type="text" placeholder="Username or Email address*" class="profile_inp" id="email_inp">
+                <input type="password" placeholder="Password*" class="profile_inp" id="password_inp">
+    
+                <div class="profile_header">
+                    <div ><Button id="profile_btn" class="magic-hover magic-hover__square">SIGN IN</Button></div>
+                    <div class="profile_bottom"><input type="checkbox" class="magic-hover magic-hover__square"><span>REMEMBER ME</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="heart"><img src="./img/heart.png" alt="" class="nav_item magic-hover magic-hover__square" >
+        <div class="heart_count">0</div>
+        </div>
+        <div id="cart"><img src="./img/shopping-cart.png" alt="" class="nav_item magic-hover magic-hover__square">
+            <div class="cart_count">0</div>
+        </div>
+      </div>
+    
+</nav>
+
+<!-- //////////////////////////Carousel///////////////////// -->
+
+<div class="carousel-container">
+    <div class="carousel-slides">
+        <div class="carousel-slide">
+            <div class="slide-content" >
+                <div class="content_1">
+                    <p class="p1">NEW ARRIVALS</p>
+                    <p class="p2">Chair & Seating You'll Love</p>
+                   <p class="p3">Designer chair style for every space - <span>Free Shipping</span></p>
+                   <div class="main_btn"> <button class="content_btn magic-hover magic-hover__square">SHOP NOW</button></div>
+                </div>
+                <div class="content_2"><img src="./img/black_chair-removebg-preview.webp" alt="" class="slide_img1"></div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="slide-content" >
+                <div class="content_1">
+                    <p class="p1">SALE OF 30%</p>
+                    <p class="p2" id="p2">Lamps and Lightening Great Low Prices</p>
+                    <p class="p3" id="p3">Free standard shipping <span>with 35$</span></p>
+                    <div class="main_btn"> <button class="content_btn magic-hover magic-hover__square">SHOP NOW</button></div>
+
+                </div>
+                <div class="content_2" id="content_img_2"><img src="./img/wintersweet-table-lamp-a17809-2-14-1189-10-01.webp" alt="" class="slide_img2" ></div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="slide-content" >
+                <div class="content_1">
+                    <p class="p1">SALE OF 25%</p>
+                    <p class="p2">Discover Living Room Tables</p>
+                    <p class="p3" id="p3">Free standard shipping <span>with 45$</span></p>
+                    <div class="main_btn"> <button class="content_btn magic-hover magic-hover__square">SHOP NOW</button></div>
+
+                </div>
+                <div class="content_2"><img src="./img/round-wood-table-free-png.webp" alt="" class="slide_img3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Circle Buttons -->
+    <div class="circle-buttons">
+        <button data-slide="0" class="active magic-hover magic-hover__square"></button>
+        <button data-slide="1" class="magic-hover magic-hover__square"></button>
+        <button data-slide="2" class="magic-hover magic-hover__square"></button>
+    </div>
+</div>
+
+<!-- -------------------------------------Owl Carousel Slider------------------- -->
+
+<h1 class="owl-carousel_main_tag">SHOP BY CATEGORY</h1>
+<div class="owl-carousel">
+    <div class="carousal_owl_container magic-hover magic-hover__square">
+        <div ><img src="./img/table_black.webp" alt="" class="carousal_owl_img"></div>
+        <div class="carousal_owl_main">
+            <div class="carousal_owl_title">Table</div>
+            <div class="carousal_owl_desc">7 Products</div>
+        </div>
+    </div>
+    <div class="carousal_owl_container magic-hover magic-hover__square">
+        <div ><img src="./img/bed_black.webp" alt="" class="carousal_owl_img"></div>
+        <div class="carousal_owl_main">
+            <div class="carousal_owl_title">Bed</div>
+            <div class="carousal_owl_desc">11 Products</div>
+        </div>
+    </div>
+    <div class="carousal_owl_container magic-hover magic-hover__square">
+        <div ><img src="./img/desk-lamp-z0Ad92F-600.webp" alt="" class="carousal_owl_img"></div>
+        <div class="carousal_owl_main">
+            <div class="carousal_owl_title">Lamp</div>
+            <div class="carousal_owl_desc">17 Products</div>
+        </div>
+    </div>
+    <div class="carousal_owl_container magic-hover magic-hover__square">
+        <div ><img src="./img/chair_black.webp" alt="" class="carousal_owl_img"></div>
+        <div class="carousal_owl_main">
+            <div class="carousal_owl_title">Chair</div>
+            <div class="carousal_owl_desc">6 Products</div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ////////////////////////////////Brand Cards///////////////// -->
+
+  <div class="main_brand">
+
+    <div>
+
+       <div class="lamp_brand_wrapper magic-hover magic-hover__square">
+        <div class="lamp_brand">
+        </div>
+        <div class="lamp_brand_content">
+            <p>Up to 70% Off Top Lamp Brands</p>
+            <div class="lamp_brand_content_btn"><p class="btn">SHOP NOW</p></div>
+          </div>
+       </div>
+        <div class="cabinets magic-hover magic-hover__square">
+            <div class="cabinet_further">
+                <p>BIG SALE</p>
+            <h6>Up to 70% Off Furniture & Decor </h6>
+           <div class="cabinet_btn"><button>SHOP NOW</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="furniture magic-hover magic-hover__square">
+        <div class="furniture_further">
+            <p>BIG SALE</p>
+        <h6>Up to 70% Off Furniture & Decor </h6>
+       <div class="furniture_btn"><button>SHOP NOW</button></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="sofa-wrapper magic-hover magic-hover__square">
+    <div class="sofa"></div>
+    <div class="sofa_content">
+        <div><h1>10%</h1></div>
+        <div>
+            <div><p class="p1">Get More Pay Less</p></div>
+            <div><p class="p2">On orders $500 + Use Coupon Code: <span>WSD10</span></p></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- /////////////////////////Card//////////////////////// -->
+
+  <div class="card_container">
+   
+
+<div class="card_main">
+    <div class="card_Pro magic-hover magic-hover__square">
+        <div class="all_pro">
+            <p class="p1">Best Modern Furniture</p>
+            <p class="p2">See all >> </p>
+        </div>
+
+        
+    </div>
+
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show">
+        <div class="card_img"></div>
+        <div class="card_title">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price">$1,009 <span><del>$1,259</del></span></div>
+
+        
+        <button class="add_to_cart magic-hover magic-hover__square cart_alert" >Add To Cart</button>
+        
+    </div>
+
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show2">
+        <div class="card_img" id="img1_card"></div>
+        <div class="card_title">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price">$1,009 <span><del>$1,259</del></span></div>
+        
+
+        <button class="add_to_cart2 magic-hover magic-hover__square cart_alert2" >Add To Cart</button>
+    </div>
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show3">
+        <div class="card_img" id="img2_card"></div>
+        <div class="card_title">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price">$1,009 <span><del>$1,259</del></span></div>
+
+        <button class="add_to_cart3 magic-hover magic-hover__square cart_alert3" >Add To Cart</button>
+    </div>
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show4">
+        <div class="card_img" id="img3_card"></div>
+        <div class="card_title" id="card_custom">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price" id="card_custom">$1,009 <span><del>$1,259</del></span></div>
+
+        <button class="add_to_cart4 magic-hover magic-hover__square cart_alert4" >Add To Cart</button>
+    </div>
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show5">
+        <div class="card_img" id="img4_card"></div>
+        <div class="card_title">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price">$1,009 <span><del>$1,259</del></span></div>
+
+        <button class="add_to_cart5 magic-hover magic-hover__square cart_alert5" >Add To Cart</button>
+    </div>
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show6">
+        <div class="card_img" id="img5_card"></div>
+        <div class="card_title">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price">$1,009 <span><del>$1,259</del></span></div>
+
+        <button class="add_to_cart6 magic-hover magic-hover__square cart_alert6" >Add To Cart</button>
+    </div>
+
+    <div class="card_Pro magic-hover magic-hover__square" id="cart_show7">
+        <div class="card_img" id="img6_card"></div>
+        <div class="card_title">Wood Outdoor Adirondack Chair</div>
+        <div class="card_price">$1,009 <span><del>$1,259</del></span></div>
+
+        <button class="add_to_cart7 magic-hover magic-hover__square cart_alert7" >Add To Cart</button>
+    </div>
+</div>
+  </div>
+
+  <div class="video-container magic-hover magic-hover__square">
+    <video autoplay muted loop class="background-video">
+        <source src="./video/8108979-uhd_4096_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay_video"></div>
+    <div class="content">
+        <h1>Wood</h1>
+    </div>
+</div>
+
+<!-- /////////////////////Hidden Data/////////////////// -->
+
+
+<div class="end_footer" id="hidden_footer" >
+    <div>
+       <h1 style="text-align: center; font-size: 40px; margin-top: 15px;">Sign Up for Emails</h1>
+       <p style="text-align: center; margin-top: 15px; color: gray;">Enjoy 15% off* your first order when sign up to our newsletter</p>
+       <div style="border: 1px solid black; width: fit-content; margin-top: 20px;"><input type="text" style="padding-left: 20px; outline: none; width: 200px; border: none;"><button style="border: none; padding: 15px 20px; background-color: black; color: white; font-weight: bold; margin-left: 400px;">SIGN UP</button></div>
+    </div>
+</div>
+
+<div class="hr_div" id="hidden_footer" style="margin-top: 30px;"><hr></div>
+
+<!-- /////////////////////////Footer/////////////////// -->
+
+<div class="footer_container">
+    <div>
+        <ul class="footer_ul">
+            <li id="nooni_brand">nOoN'i</li>
+            <li class="magic-hover magic-hover__square text_number_color">Text: +923134964026</li>
+            <li class="magic-hover magic-hover__square">Mon – Fri: 8 am – 8 pm</li>
+            <li class="magic-hover magic-hover__square">Sat – Sun: 8 am – 7 pm</li>
+        </ul>
+    </div>
+<hr class="break_hr">
+    <div>
+        <ul class="footer_ul">
+            <li id="li_brand">ABOUT</li>
+            <li class="magic-hover magic-hover__square">Our Story</li>
+            <li class="magic-hover magic-hover__square">Careers</li>
+            <li class="magic-hover magic-hover__square">Influencers</li>
+            <li class="magic-hover magic-hover__square">Join our Team</li>
+        </ul>
+    </div>
+<hr class="break_hr">
+    <div>
+        <ul class="footer_ul">
+            <li id="li_brand">CUSTOMER SERVICES</li>
+            <li class="magic-hover magic-hover__square">Contact Us</li>
+            <li class="magic-hover magic-hover__square">Customer Service</li>
+            <li class="magic-hover magic-hover__square">Find Store</li>
+            <li class="magic-hover magic-hover__square">Book Appointment</li>
+            <li class="magic-hover magic-hover__square">Shipping & Returns</li>
+        </ul>
+    </div>
+<hr class="break_hr">
+    <div>
+        <ul class="footer_ul" id="sign_footer">
+            <li id="li_brand">SIGN UP FOR EMAILS</li>
+            <li class="magic-hover magic-hover__square">Enjoy 15% off* your first order when sign up to our newsletter</li>
+            <li class="li_inp_div"><input type="text" class="li_inp" placeholder="Enter email"> <button class="li_inp_btn">SUBSCRIBE</button></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+<div class="hr_div"><hr></div>
+<div class="end_footer">
+    <div>
+        <ul class="end_footer_ul">
+            <li class="magic-hover magic-hover__square">Privacy Policy</li>
+            <li class="magic-hover magic-hover__square">Help</li>
+            <li class="magic-hover magic-hover__square">FAQS</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="end_footer_ul">
+            <li class="magic-hover magic-hover__square">© Nooni. All Rights Reserved.</li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
